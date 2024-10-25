@@ -1,0 +1,92 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background for high contrast */
+    color: #000000; /* Black text for maximum readability */
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #0066cc; /* Blue links for visibility */
+    text-decoration: underline;
+}
+
+a:focus, a:hover {
+    color: #003399; /* Darker blue on hover/focus */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #555555; /* Dark grey text */
+}
+
+/* Ensure high contrast for all interactive elements */
+a:focus, a:hover, button:focus, button:hover {
+    outline: 3px solid #ffbf47; /* High-contrast outline */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
