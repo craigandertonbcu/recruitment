@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.8; /* Increase line spacing for readability */
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -64,8 +64,14 @@ ul {
 }
 
 ul ul {
-    list-style-type: circle;
-    padding-left: 15px;
+    list-style-type: disc;
+    padding-left: 0; /* Aligns nested list with main list */
+    margin-left: 20px; /* Aligns nested items with main list items */
+}
+
+/* Specific spacing adjustment for Boxing bullet point */
+ul li strong + ul li {
+    margin-top: 0.5em; /* Adds extra space above "Boxing" item */
 }
 
 /* Link styling */
@@ -78,14 +84,25 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* Image styling */
+/* Image and caption styling */
+figure {
+    margin: 15px 0;
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 15px 0;
+    margin: 0 auto;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
 }
 
 /* Footer styling */
