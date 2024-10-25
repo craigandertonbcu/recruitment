@@ -1,4 +1,4 @@
-/* Reset some default styles for consistency */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,86 +7,104 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
-    background-color: #ffffff; /* White background for high contrast */
-    color: #000000; /* Black text for maximum readability */
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
-header, footer {
+/* Main container for centering content */
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
     text-align: center;
-    padding: 20px 0;
-    background-color: #f0f0f0; /* Light grey background */
+    margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #2c3e50;
 }
 
+header h2 {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: normal;
+}
+
+/* Section headings */
 h2 {
-    font-size: 1.8em;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin: 20px 0 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
 
-h3 {
-    font-size: 1.4em;
-    margin-top: 20px;
-    margin-bottom: 10px;
+/* Paragraph styling */
+p, li {
+    margin-bottom: 1em;
 }
 
-p {
-    margin-bottom: 15px;
-}
-
+/* List styling */
 ul {
+    padding-left: 20px;
     list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
 }
 
+ul ul {
+    list-style-type: circle;
+    padding-left: 15px;
+}
+
+/* Link styling */
 a {
-    color: #0066cc; /* Blue links for visibility */
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
     text-decoration: underline;
 }
 
-a:focus, a:hover {
-    color: #003399; /* Darker blue on hover/focus */
-}
-
+/* Image styling */
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px 0;
+    margin: 15px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer p {
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
     font-size: 0.9em;
-    color: #555555; /* Dark grey text */
+    color: #777;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
 }
 
-/* Ensure high contrast for all interactive elements */
-a:focus, a:hover, button:focus, button:hover {
-    outline: 3px solid #ffbf47; /* High-contrast outline */
-}
-
-/* Responsive design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
+    header h1 {
+        font-size: 1.8em;
     }
 
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
+    header h2, h2 {
         font-size: 1.2em;
     }
 }
