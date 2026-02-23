@@ -81,6 +81,8 @@ a {
 }
 
 a:hover, a:focus {
+    outline: 3px solid #2c3e50;
+    outline-offset: 3px;
     text-decoration: underline;
 }
 
@@ -138,4 +140,5 @@ footer {
         font-size: 1.2em;
     }
 }
+
 
